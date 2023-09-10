@@ -1,0 +1,121 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+.conversation {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #0b141a;
+}
+
+.background_image{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.06;
+    background-image: url('./../../../assets/images/convsersation-background.png');
+}
+
+.chats_header {
+    background-color: #202c33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 59px;
+    z-index: 1;
+}
+
+.profile_image_container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.profile_image {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.profile_image img {
+    border-radius: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.username_lastseen h5{
+    margin: 0;
+    font-size: 16px;
+    color: #e9edef;
+    font-family: system-ui;
+    font-weight: 500;
+}
+
+.username_lastseen h6{
+    margin: 0;
+    color: #8696a0;
+    font-size: 13px;
+    font-family: system-ui;
+    font-weight: 400;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon_container {
+    padding: 8px;
+    margin-left: 10px;
+}
+
+.input_and_actions_container{
+    background-color: #202c33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    padding: 5px 16px;
+    border-left: 1px solid rgba(134,150,160,0.15);
+    z-index: 1;
+}
+
+.input_and_audio_container{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.input_and_audio_container .input_container{
+    padding: 9px 12px;
+    margin: 5px 8px;
+    background-color: #2a3942;
+    border: 1px solid #2a3942;
+    border-radius: 8px;
+    flex: 1 1 auto;
+    min-height: 20px;
+    display: flex;
+}
+
+.input_and_audio_container .input_container input{
+    background: transparent;
+    border: none;
+    color: white;
+    flex: 1;
+}
+
+.input_and_audio_container .input_container input::placeholder{
+    color: #8696a0;
+}
+
+.input_and_audio_container .input_container input:focus{
+    outline: none;
+}
