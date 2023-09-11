@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./conversation-component.css">
+    <link rel="stylesheet" href="./../../../global.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="conversation">
         <div class="background_image"></div>
-        <div class="chats_header">
+        <div class="conversation_header">
             <div class="profile_image_container">
                 <div class="profile_image">
                     <img src="./../../../assets/images/logo-cirle.png" alt="">
@@ -32,13 +33,143 @@
                 </span>
             </div>
         </div>
+        <div class="conversation_panel">
+            <div class="conversation_note">
+                <button>Click here to get older messages from your phone.</button>
+            </div>
+            <div class="messages_container">
+                <div class="date_row">
+                    <div class="date_container"><span>14/04/2023</span></div>
+                </div>
+                <div class="message_row receive first">
+                    <div class="message_container">
+                        <div class="message_and_marker">
+                            <span class="message_marker">
+                            <object width="8px" height="13px" data="./../../../assets/icons/message-marker-receive.html"></object>
+                            </span>
+                            <div class="message_and_time">
+                                <h5>Hello! how are you?</h5>
+                                <h6>11:03pm</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_row send first">
+                    <div class="message_container">
+                        <div class="message_and_marker">
+                            <span class="message_marker">
+                            <object width="8px" height="13px" data="./../../../assets/icons/message-marker-send.html"></object>
+                            </span>
+                            <div class="message_and_time">
+                                <h5>I'm good</h5>
+                                <h6>11:20pm</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_row send">
+                    <div class="message_container">
+                        <div class="message_and_marker">
+                            <span class="message_marker">
+                            <object width="8px" height="13px" data="./../../../assets/icons/message-marker-send.html"></object>
+                            </span>
+                            <div class="message_and_time">
+                                <h5>how about you?</h5>
+                                <h6>11:20pm</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_row receive first">
+                    <div class="message_container">
+                        <div class="message_and_marker">
+                            <span class="message_marker">
+                            <object width="8px" height="13px" data="./../../../assets/icons/message-marker-receive.html"></object>
+                            </span>
+                            <div class="message_and_time">
+                                <h5>I'm good as well</h5>
+                                <h6>11:20pm</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_row receive">
+                    <div class="message_container">
+                        <div class="message_and_marker">
+                            <span class="message_marker">
+                            <object width="8px" height="13px" data="./../../../assets/icons/message-marker-receive.html"></object>
+                            </span>
+                            <div class="message_and_time">
+                                <h5>Can we meet?</h5>
+                                <h6>11:20pm</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_row receive">
+                    <div class="message_container">
+                        <div class="message_and_marker">
+                            <span class="message_marker">
+                            <object width="8px" height="13px" data="./../../../assets/icons/message-marker-receive.html"></object>
+                            </span>
+                            <div class="message_and_time">
+                                <h5>I want to discuss something</h5>
+                                <h6>11:20pm</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_row send first">
+                    <div class="message_container">
+                        <div class="message_and_marker">
+                            <span class="message_marker">
+                            <object width="8px" height="13px" data="./../../../assets/icons/message-marker-send.html"></object>
+                            </span>
+                            <div class="message_and_time">
+                                <h5>Sure</h5>
+                                <h6>11:20pm</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="date_row">
+                    <div class="date_container"><span>Today</span></div>
+                </div>
+                <div class="message_row receive first">
+                    <div class="message_container">
+                        <div class="message_and_marker">
+                            <span class="message_marker">
+                            <object width="8px" height="13px" data="./../../../assets/icons/message-marker-receive.html"></object>
+                            </span>
+                            <div class="message_and_time">
+                                <h5>Hey! can we meet?</h5>
+                                <h6>10:17pm</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_row send first">
+                    <div class="message_container">
+                        <div class="message_and_marker">
+                            <span class="message_marker">
+                            <object width="8px" height="13px" data="./../../../assets/icons/message-marker-send.html"></object>
+                            </span>
+                            <div class="message_and_time">
+                                <h5>Sure</h5>
+                                <h6>10:43pm</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="input_and_actions_container">
             <span class="icons">
-                <div class="icon_container">
-                    <object width="24px" height="24px" data="./../../../assets/icons/search-icon.html"></object>
+                <div class="icon_container no_margin">
+                    <object width="26px" height="26px" data="./../../../assets/icons/emoji-icon.html"></object>
                 </div>
-                <div class="icon_container">
-                    <object width="24px" height="24px" data="./../../../assets/icons/menu-icon.html"></object>
+                <div class="icon_container no_margin">
+                    <object width="24px" height="24px" data="./../../../assets/icons/add-icon.html"></object>
                 </div>
             </span>
             <div class="input_and_audio_container">
@@ -46,8 +177,9 @@
                     <input type="text" placeholder="Type a message">
                 </div>
                 <span class="icons">
-                    <div class="icon_container">
-                        <object width="24px" height="24px" data="./../../../assets/icons/search-icon.html"></object>
+                    <div class="icon_container no_margin">
+                        <object width="24px" height="24px" data="./../../../assets/icons/audio-icon.html"></object>
+                        <!-- <object width="24px" height="24px" data="./../../../assets/icons/send-icon.html"></object> -->
                     </div>
                 </span>
             </div>
